@@ -1,6 +1,5 @@
 package com.example.examenparcial.controller;
 
-<<<<<<< Updated upstream
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,16 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.examenparcial.model.AlumnoModel;
 import com.example.examenparcial.service.AlumnoService;
 
-=======
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
->>>>>>> Stashed changes
 @RestController
 @RequestMapping("alumno")
 public class AlumnoController {
 
-<<<<<<< Updated upstream
     @Autowired
     AlumnoService alumnoService;
 
@@ -57,6 +50,4 @@ public class AlumnoController {
         return ResponseEntity.ok("Usuario eliminado con éxito");
     }
 
-=======
->>>>>>> Stashed changes
 }
