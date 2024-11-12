@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.examenparcial.model.AlumnoModel;
-import com.example.examenparcial.service.AlumnoService;
+import com.example.examenparcial.service.IAlumnoservice;
 
 @RestController
-@RequestMapping("/alumno")
+@RequestMapping("alumno")
 public class AlumnoController {
 
     @Autowired
-    AlumnoService alumnoService;
+    IAlumnoservice alumnoService;
 
     @GetMapping("/findAll")
     public List<AlumnoModel> FindAll() {
@@ -40,12 +40,12 @@ public class AlumnoController {
     }
 
     @GetMapping("/find/{id}")
-    public AlumnoModel findById(@PathVariable Integer id) {
+    public AlumnoModel findById(@PathVariable int id) {
         return alumnoService.findById(id);
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> delete(@PathVariable Integer id) {
+    public ResponseEntity<String> delete(@PathVariable int id) {
         alumnoService.delete(id);
         return ResponseEntity.ok("Usuario eliminado con éxito");
     }

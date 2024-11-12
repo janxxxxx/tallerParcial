@@ -1,8 +1,11 @@
 package com.example.examenparcial.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import com.example.examenparcial.model.AlumnoModel;
 
-public interface AlumnoRepository extends JpaRepository<AlumnoModel, Integer> {
+@Repository
+public interface AlumnoRepository
+        extends CrudRepository<AlumnoModel, Integer> {
 }
