@@ -1,0 +1,20 @@
+version: "1"
+
+services:
+  db-mysql:
+    image: mysql:8.0.26
+    container_name: db-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: examen_parcial
+    ports:
+      - "3406:3306"      # Puerto local 3406
+      - "34060:33060"    # Puerto local 34060 
+    networks:
+      - td2024
+
+networks:
+  td2024:
+    driver: bridge
+    name: ms-unu
