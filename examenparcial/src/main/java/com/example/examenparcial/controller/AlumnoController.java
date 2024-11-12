@@ -17,7 +17,7 @@ import com.example.examenparcial.model.AlumnoModel;
 import com.example.examenparcial.service.AlumnoService;
 
 @RestController
-@RequestMapping("alumno")
+@RequestMapping("/alumno")
 public class AlumnoController {
 
     @Autowired
