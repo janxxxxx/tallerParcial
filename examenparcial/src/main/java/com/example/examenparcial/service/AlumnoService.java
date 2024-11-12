@@ -10,18 +10,18 @@ import com.example.examenparcial.repository.AlumnoRepository;
 
 @Service
 public class AlumnoService implements IAlumnoservice {
-    
+
     @Autowired
     AlumnoRepository repository;
 
     @Override
     public List<AlumnoModel> findAll() {
-        return (List<AlumnoModel>)repository.findAll();
+        return (List<AlumnoModel>) repository.findAll();
     }
 
     @Override
     public AlumnoModel findById(Integer id) {
-        return (AlumnoModel)repository.findById(id).get();
+        return (AlumnoModel) repository.findById(id).get();
     }
 
     @Override
@@ -39,7 +39,5 @@ public class AlumnoService implements IAlumnoservice {
         repository.deleteById(id);
         return true;
     }
-    
-        
-    
+
 }
