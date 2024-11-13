@@ -10,9 +10,9 @@ public interface IAlumnoservice {
 
     public AlumnoModel findById(int id);
 
-    public AlumnoModel add(AlumnoModel model);
+    public AlumnoModel add(AlumnoModel alumno);
 
-    public AlumnoModel update(AlumnoModel model);
+    public AlumnoModel update(AlumnoModel alumno);
 
     public Boolean delete(int id);
 

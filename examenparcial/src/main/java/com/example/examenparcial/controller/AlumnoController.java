@@ -24,10 +24,10 @@ import jakarta.validation.Valid;
 public class AlumnoController {
 
     @Autowired
-    private AlumnoService alumnoService;
+    AlumnoService alumnoService;
 
     // busqueda general
-    @GetMapping("/getAll")
+    @GetMapping("/listar")
     public ResponseEntity<List<AlumnoModel>> findAll() {
         List<AlumnoModel> lista = alumnoService.findAll();
         return ResponseEntity.ok(lista);
@@ -39,6 +39,7 @@ public class AlumnoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(alumno);
     }
 
+    // esta mal
     @PutMapping("/update")
     public ResponseEntity<AlumnoModel> update(@Valid @RequestBody AlumnoModel model) {
         AlumnoModel alumno = alumnoService.update(model);

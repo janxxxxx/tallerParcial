@@ -20,8 +20,8 @@ public class AlumnoService implements IAlumnoservice {
     }
 
     @Override
-    public AlumnoModel add(AlumnoModel model) {
-        return alumnoRepository.save(model);
+    public AlumnoModel add(AlumnoModel alumno) {
+        return alumnoRepository.save(alumno);
     }
 
     @Override
@@ -30,8 +30,8 @@ public class AlumnoService implements IAlumnoservice {
     }
 
     @Override
-    public AlumnoModel update(AlumnoModel model) {
-        return alumnoRepository.save(model);
+    public AlumnoModel update(AlumnoModel alumno) {
+        return alumnoRepository.save(alumno);
     }
 
     @Override
