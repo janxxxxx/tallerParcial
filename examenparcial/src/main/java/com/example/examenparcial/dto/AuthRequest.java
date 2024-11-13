@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 
 public class AuthRequest implements Serializable {
     private static final long serialVersionUID = 1L;
+    private int id;
     private String nombre;
     private BigDecimal nota;
 
@@ -12,9 +13,18 @@ public class AuthRequest implements Serializable {
 
     }
 
-    public AuthRequest(String nombre, BigDecimal nota) {
+    public AuthRequest(int id, String nombre, BigDecimal nota) {
+        this.id = id;
         this.nombre = nombre;
         this.nota = nota;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {

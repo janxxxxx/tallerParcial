@@ -3,6 +3,7 @@ package com.example.examenparcial.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,32 +17,45 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.examenparcial.model.AlumnoModel;
 import com.example.examenparcial.service.IAlumnoservice;
 
+import jakarta.validation.Valid;
+
 @RestController
-@RequestMapping("alumno")
+@RequestMapping("/alumno")
 public class AlumnoController {
 
     @Autowired
-    IAlumnoservice alumnoService;
+    private IAlumnoservice alumnoService;
+
+    @GetMapping("/test")
+    public String test() {
+        return "Ruta funcionando correctamente";
+    }
 
     @GetMapping("/findAll")
-    public List<AlumnoModel> FindAll() {
+    public ResponseEntity<List<AlumnoModel>> findAll() {
         List<AlumnoModel> lista = alumnoService.findAll();
-        return lista;
+        return ResponseEntity.ok(lista);
     }
 
     @PostMapping("/create")
-    public AlumnoModel create(@RequestBody AlumnoModel model) {
-        return alumnoService.add(model);
+    public ResponseEntity<AlumnoModel> create(@Valid @RequestBody AlumnoModel model) {
+        AlumnoModel alumno = alumnoService.add(model);
+        return ResponseEntity.status(HttpStatus.CREATED).body(alumno);
     }
 
     @PutMapping("/update")
-    public AlumnoModel update(@RequestBody AlumnoModel model) {
-        return alumnoService.update(model);
+    public ResponseEntity<AlumnoModel> update(@Valid @RequestBody AlumnoModel model) {
+        AlumnoModel alumno = alumnoService.update(model);
+        return ResponseEntity.ok(alumno);
     }
 
     @GetMapping("/find/{id}")
-    public AlumnoModel findById(@PathVariable int id) {
-        return alumnoService.findById(id);
+    public ResponseEntity<AlumnoModel> findById(@PathVariable int id) {
+        AlumnoModel alumno = alumnoService.findById(id);
+        if (alumno == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(alumno);
     }
 
     @DeleteMapping("/delete/{id}")
@@ -49,5 +63,4 @@ public class AlumnoController {
         alumnoService.delete(id);
         return ResponseEntity.ok("Usuario eliminado con éxito");
     }
-
 }
