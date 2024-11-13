@@ -12,31 +12,31 @@ import com.example.examenparcial.repository.AlumnoRepository;
 public class AlumnoService implements IAlumnoservice {
 
     @Autowired
-    AlumnoRepository alumnoRepositoryrepository;
-
-    @Override
-    public AlumnoModel add(AlumnoModel model) {
-        return alumnoRepositoryrepository.save(model);
-    }
+    private AlumnoRepository alumnoRepository;
 
     @Override
     public List<AlumnoModel> findAll() {
-        return (List<AlumnoModel>) alumnoRepositoryrepository.findAll();
+        return (List<AlumnoModel>) alumnoRepository.findAll();
+    }
+
+    @Override
+    public AlumnoModel add(AlumnoModel model) {
+        return alumnoRepository.save(model);
     }
 
     @Override
     public AlumnoModel findById(int id) {
-        return (AlumnoModel) alumnoRepositoryrepository.findById(id).get();
+        return (AlumnoModel) alumnoRepository.findById(id).get();
     }
 
     @Override
     public AlumnoModel update(AlumnoModel model) {
-        return alumnoRepositoryrepository.save(model);
+        return alumnoRepository.save(model);
     }
 
     @Override
     public Boolean delete(int id) {
-        alumnoRepositoryrepository.deleteById(id);
+        alumnoRepository.deleteById(id);
         return true;
     }
 

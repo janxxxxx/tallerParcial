@@ -1,19 +1,18 @@
 package com.example.examenparcial.dto;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 public class AuthRequest implements Serializable {
     private static final long serialVersionUID = 1L;
     private int id;
     private String nombre;
-    private BigDecimal nota;
+    private float nota;
 
     public AuthRequest() {
 
     }
 
-    public AuthRequest(int id, String nombre, BigDecimal nota) {
+    public AuthRequest(int id, String nombre, float nota) {
         this.id = id;
         this.nombre = nombre;
         this.nota = nota;
@@ -35,11 +34,11 @@ public class AuthRequest implements Serializable {
         this.nombre = nombre;
     }
 
-    public BigDecimal getNota() {
+    public float getNota() {
         return this.nota;
     }
 
-    public void setNota(BigDecimal nota) {
+    public void setNota(float nota) {
         this.nota = nota;
     }
 

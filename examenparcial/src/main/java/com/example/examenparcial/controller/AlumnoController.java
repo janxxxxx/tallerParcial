@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.examenparcial.model.AlumnoModel;
-import com.example.examenparcial.service.IAlumnoservice;
+import com.example.examenparcial.service.AlumnoService;
 
 import jakarta.validation.Valid;
 
@@ -24,14 +24,10 @@ import jakarta.validation.Valid;
 public class AlumnoController {
 
     @Autowired
-    private IAlumnoservice alumnoService;
+    private AlumnoService alumnoService;
 
-    @GetMapping("/test")
-    public String test() {
-        return "Ruta funcionando correctamente";
-    }
-
-    @GetMapping("/findAll")
+    // busqueda general
+    @GetMapping("/getAll")
     public ResponseEntity<List<AlumnoModel>> findAll() {
         List<AlumnoModel> lista = alumnoService.findAll();
         return ResponseEntity.ok(lista);
@@ -49,7 +45,7 @@ public class AlumnoController {
         return ResponseEntity.ok(alumno);
     }
 
-    @GetMapping("/find/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<AlumnoModel> findById(@PathVariable int id) {
         AlumnoModel alumno = alumnoService.findById(id);
         if (alumno == null) {
