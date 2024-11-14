@@ -1,6 +1,7 @@
 package com.example.examenparcial.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,8 +26,9 @@ public class AlumnoService implements IAlumnoservice {
     }
 
     @Override
-    public AlumnoModel findById(int id) {
-        return (AlumnoModel) alumnoRepository.findById(id).get();
+    public Optional<AlumnoModel> findById(int id) {
+        // Devuelve el resultado del repositorio, que es un Optional<AlumnoModel>
+        return alumnoRepository.findById(id);
     }
 
     @Override

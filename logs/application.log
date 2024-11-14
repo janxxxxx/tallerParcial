@@ -1,0 +1,101 @@
+2024-11-14T13:11:49.765-05:00  INFO 22044 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Starting ExamenparcialApplication using Java 17.0.13 with PID 22044 (D:\UNU2024\tallerParcial\examenparcial\target\classes started by janst in d:\UNU2024\tallerParcial)
+2024-11-14T13:11:49.766-05:00 DEBUG 22044 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-14T13:11:49.767-05:00  INFO 22044 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-14T13:11:50.030-05:00  INFO 22044 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14T13:11:50.041-05:00  INFO 22044 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-11-14T13:11:50.174-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-14T13:11:50.175-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14T13:11:50.175-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-14T13:11:50.193-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14T13:11:50.193-05:00  INFO 22044 --- [examenparcial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 421 ms
+2024-11-14T13:11:50.285-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14T13:11:50.289-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-14T13:11:50.295-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-14T13:11:50.296-05:00  INFO 22044 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-14T13:11:50.310-05:00  INFO 22044 --- [examenparcial] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d1ac507
+2024-11-14T13:11:50.310-05:00  INFO 22044 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-14T13:11:50.342-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-14T13:11:50.351-05:00  INFO 22044 --- [examenparcial] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14T13:11:50.672-05:00  INFO 22044 --- [examenparcial] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-11-14T13:11:52.321-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Starting ExamenparcialApplication using Java 17.0.13 with PID 25552 (D:\UNU2024\tallerParcial\examenparcial\target\classes started by janst in d:\UNU2024\tallerParcial)
+2024-11-14T13:11:52.324-05:00 DEBUG 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-14T13:11:52.325-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-14T13:11:52.370-05:00  INFO 25552 --- [examenparcial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-14T13:11:52.371-05:00  INFO 25552 --- [examenparcial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-14T13:11:53.218-05:00  INFO 25552 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14T13:11:53.280-05:00  INFO 25552 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2024-11-14T13:11:54.160-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-14T13:11:54.173-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14T13:11:54.174-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-14T13:11:54.226-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14T13:11:54.226-05:00  INFO 25552 --- [examenparcial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1854 ms
+2024-11-14T13:11:54.513-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14T13:11:54.563-05:00  INFO 25552 --- [examenparcial] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-14T13:11:54.597-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-14T13:11:54.848-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-14T13:11:54.877-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-14T13:11:55.196-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27015875
+2024-11-14T13:11:55.198-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-14T13:11:55.878-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-14T13:11:55.912-05:00  INFO 25552 --- [examenparcial] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14T13:11:56.945-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-11-14T13:11:57.012-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-14T13:11:57.025-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Started ExamenparcialApplication in 5.123 seconds (process running for 5.593)
+2024-11-14T13:12:03.509-05:00  INFO 25552 --- [examenparcial] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14T13:12:03.509-05:00  INFO 25552 --- [examenparcial] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14T13:12:03.510-05:00  INFO 25552 --- [examenparcial] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-14T13:12:14.108-05:00  INFO 25552 --- [examenparcial] [http-nio-8081-exec-2] c.e.e.controller.AlumnoController        : Alumno con ID 15 registrado con éxito.
+2024-11-14T13:12:35.324-05:00  INFO 25552 --- [examenparcial] [http-nio-8081-exec-5] c.e.e.controller.AlumnoController        : Alumno con ID 15 eliminado con éxito.
+2024-11-14T13:19:18.648-05:00  INFO 25552 --- [examenparcial] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-11-14T13:19:18.762-05:00  INFO 25552 --- [examenparcial] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14T13:19:18.764-05:00  INFO 25552 --- [examenparcial] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-14T13:19:18.774-05:00  INFO 25552 --- [examenparcial] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-14T13:19:18.858-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Starting ExamenparcialApplication using Java 17.0.13 with PID 25552 (D:\UNU2024\tallerParcial\examenparcial\target\classes started by janst in d:\UNU2024\tallerParcial)
+2024-11-14T13:19:18.858-05:00 DEBUG 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-14T13:19:18.858-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-14T13:19:19.081-05:00  INFO 25552 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14T13:19:19.092-05:00  INFO 25552 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-11-14T13:19:19.201-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-14T13:19:19.202-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14T13:19:19.203-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-14T13:19:19.216-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14T13:19:19.217-05:00  INFO 25552 --- [examenparcial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 357 ms
+2024-11-14T13:19:19.304-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14T13:19:19.306-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-14T13:19:19.315-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-14T13:19:19.316-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-14T13:19:19.330-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a8acbce
+2024-11-14T13:19:19.330-05:00  INFO 25552 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-14T13:19:19.363-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-14T13:19:19.370-05:00  INFO 25552 --- [examenparcial] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14T13:19:19.692-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-11-14T13:19:19.706-05:00  INFO 25552 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-14T13:19:19.711-05:00  INFO 25552 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Started ExamenparcialApplication in 0.875 seconds (process running for 448.28)
+2024-11-14T13:19:19.714-05:00  INFO 25552 --- [examenparcial] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14T13:19:21.342-05:00  INFO 1288 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Starting ExamenparcialApplication using Java 17.0.13 with PID 1288 (D:\UNU2024\tallerParcial\examenparcial\target\classes started by janst in d:\UNU2024\tallerParcial)
+2024-11-14T13:19:21.345-05:00 DEBUG 1288 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-14T13:19:21.345-05:00  INFO 1288 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-11-14T13:19:21.383-05:00  INFO 1288 --- [examenparcial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-14T13:19:21.384-05:00  INFO 1288 --- [examenparcial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-14T13:19:22.331-05:00  INFO 1288 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14T13:19:22.409-05:00  INFO 1288 --- [examenparcial] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2024-11-14T13:19:23.138-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-14T13:19:23.151-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14T13:19:23.151-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-14T13:19:23.194-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14T13:19:23.195-05:00  INFO 1288 --- [examenparcial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1810 ms
+2024-11-14T13:19:23.457-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14T13:19:23.502-05:00  INFO 1288 --- [examenparcial] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-14T13:19:23.530-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-14T13:19:23.766-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-14T13:19:23.790-05:00  INFO 1288 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-14T13:19:24.082-05:00  INFO 1288 --- [examenparcial] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3586b81b
+2024-11-14T13:19:24.085-05:00  INFO 1288 --- [examenparcial] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-14T13:19:24.765-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-14T13:19:24.797-05:00  INFO 1288 --- [examenparcial] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14T13:19:25.638-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-11-14T13:19:25.714-05:00  INFO 1288 --- [examenparcial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-14T13:19:25.732-05:00  INFO 1288 --- [examenparcial] [restartedMain] c.e.e.ExamenparcialApplication           : Started ExamenparcialApplication in 4.718 seconds (process running for 5.095)
+2024-11-14T13:19:31.917-05:00  INFO 1288 --- [examenparcial] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14T13:19:31.917-05:00  INFO 1288 --- [examenparcial] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14T13:19:31.919-05:00  INFO 1288 --- [examenparcial] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

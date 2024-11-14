@@ -1,6 +1,7 @@
 package com.example.examenparcial.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.example.examenparcial.model.AlumnoModel;
 
@@ -8,7 +9,7 @@ public interface IAlumnoservice {
 
     public List<AlumnoModel> findAll();
 
-    public AlumnoModel findById(int id);
+    Optional<AlumnoModel> findById(int id);
 
     public AlumnoModel add(AlumnoModel alumno);
 
