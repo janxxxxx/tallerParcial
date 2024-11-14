@@ -33,19 +33,21 @@ public class AlumnoController {
         return ResponseEntity.ok(lista);
     }
 
+    // crear nuevo
     @PostMapping("/create")
     public ResponseEntity<AlumnoModel> create(@Valid @RequestBody AlumnoModel model) {
         AlumnoModel alumno = alumnoService.add(model);
         return ResponseEntity.status(HttpStatus.CREATED).body(alumno);
     }
 
-    // esta mal
+    // editar poniendo id
     @PutMapping("/update")
     public ResponseEntity<AlumnoModel> update(@Valid @RequestBody AlumnoModel model) {
         AlumnoModel alumno = alumnoService.update(model);
         return ResponseEntity.ok(alumno);
     }
 
+    // buscar por id
     @GetMapping("/get/{id}")
     public ResponseEntity<AlumnoModel> findById(@PathVariable int id) {
         AlumnoModel alumno = alumnoService.findById(id);
@@ -55,6 +57,7 @@ public class AlumnoController {
         return ResponseEntity.ok(alumno);
     }
 
+    // eliminar por id
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> delete(@PathVariable int id) {
         alumnoService.delete(id);
