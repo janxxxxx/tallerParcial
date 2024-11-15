@@ -82,15 +82,17 @@ public class AlumnoController {
     }
 
     // Buscar por ID
-    @GetMapping(Endpoints.GET) // Usar la constante GET
-    public ResponseEntity<AlumnoModel> findById(@PathVariable int id) {
-        Optional<AlumnoModel> alumnoOptional = alumnoService.findById(id); // Cambia esto a Optional
+    @GetMapping(Endpoints.GET)
+    public ResponseEntity<Object> findById(@PathVariable int id) {
+        Optional<AlumnoModel> alumnoOptional = alumnoService.findById(id);
         if (alumnoOptional.isPresent()) {
             // Si el alumno existe, devuelve el alumno
             return ResponseEntity.ok(alumnoOptional.get());
         } else {
-            // Si el alumno no existe, devuelve un 404 Not Found
-            return ResponseEntity.notFound().build();
+            // Si el alumno no existe, devuelve un 404 Not Found con un mensaje
+            Map<String, String> response = new HashMap<>();
+            response.put("mensaje", "El alumno con ID " + id + " no existe.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
         }
     }
 
