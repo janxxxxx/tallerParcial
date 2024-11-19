@@ -26,7 +26,6 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping(Endpoints.BASE_PATH) // Usar la constante BASE_PATH
 public class AlumnoController {
-
     @Autowired
     AlumnoService alumnoService;
 
@@ -50,11 +49,9 @@ public class AlumnoController {
             if (existingAlumno.isPresent()) { // Verifica si el alumno ya existe
                 return ResponseEntity.status(HttpStatus.CONFLICT).body("Alumno ya existente. No se puede registrar.");
             }
-
             // Guardar el nuevo alumno
             alumnoService.add(model);
             return ResponseEntity.status(HttpStatus.CREATED).body("Alumno registrado con éxito.");
-
         } catch (Exception e) {
             // Manejo de excepciones generales
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
